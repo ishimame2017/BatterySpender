@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="manifest" href="./manifest.json">
+  <title>Battery Spender</title>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('./service-worker.js').then(function (registration) {
+        console.log('ServiceWorker registration successful with scope: ', registration.scope);
+      }).catch(function (err) {
+        console.log('ServiceWorker registration failed: ', err);
+      });
+    }
+  </script>
+</head>
+
+<body>
+  <div id="modal" onclick="closeModal()">
+<div id="modal-content" onclick="closeModal()">
+<h1>モード選択</h1>
+<div class="button" onclick="viewMode()">閲覧</div>
+<div class="button" onclick="editMode()">編集</div>
+<div class="button" onclick="colorMode()">色</div>
+<div class="button" onclick="probMode()">確率</div>
+</div>
+</div>
+<script src="./script/webgl.js"></script>
+<script src="./script/ifs.js"></script>
+<script src="./script/main.js"></script>
+
+</body>
+
+</html>

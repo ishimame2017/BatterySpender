@@ -1,0 +1,27 @@
+/**/
+html, body { margin: 0; padding: 0; height:100%;}
+canvas { background: black; }
+#modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.5);
+}
+#modal-content{
+  background-color: #ff8;
+  width: 250px;
+  height: 60%;
+  margin: 20% auto;
+}
+.button {
+  background-color: #8ff;
+  width: 80%;
+  padding: 5px;
+  margin: 5px auto;
+  text-align: center;
+}
